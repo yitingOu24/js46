@@ -15,22 +15,18 @@
 
 <script>
 
-/*  這邊是要做1~10
-    var i = 0 ;
+
     var mydiv = $('.mydiv') ;
 
-    while ( i < 10 ){
-        mydiv.append( i , '<br>') ;
-        i++ ;
-    }
-*/
+    var obj = {
+        name:"yi-ting" ,
+        age:24 ,
+        gender:"gender"
+    } ; //表示設定一個物件
 
-    var i = 10 ;
-    var mydiv = $('.mydiv') ;
-
-    while (i--) {
-        mydiv.append( 9-i , '<br>') ;
-    }
+    mydiv.append( obj.name , '<br>') ;
+    mydiv.append( obj.age , '<br>') ;
+    mydiv.append( obj.gender , '<br>') ;
 
 
 
