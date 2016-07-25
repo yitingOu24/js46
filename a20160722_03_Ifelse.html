@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+
+<input type="text" id="go1">
+
+<button onclick="myclick()">=</button>
+
+<div class="box"></div>
+
+
+<script src="lib/jquery-3.1.0.js"></script>
+<script>
+
+function myclick(){  //這邊是要做數值得計算
+
+    var go1 = parseInt( $('#go1').val() ); //如果要有小數點的運算要用parseFloat //將字串轉換成數字
+    var Grade = 'E' ;
+
+    if( go1>=90 ) {
+        Grade = 'A';}
+    else if ( go1 >= 80) {
+        Grade = 'B';
+    }
+    else if ( go1 >= 70) {
+        Grade = 'C' ;
+    }
+    else if ( go1 >= 60) {
+        Grade = 'D' ;
+    }
+
+    $('.box').text( Grade )
+}
+
+
+</script>
+
+
+</body>
+</html>

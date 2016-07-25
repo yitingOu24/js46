@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+<div id="mydiv">
+
+</div>
+
+
+
+
+
+<script src="lib/jquery-3.1.0.js"></script>
+<script>
+    var a = 123; //十進位
+    var b = 012; // 八進位
+    var c = 0x12; // 十六進位
+
+    //var 2cats; // 錯誤, 不能數字開頭
+
+    var str = "dsdf\" \\ \n \r\n 1234 ";
+                //  \r\n 可以用來換行
+
+
+    //$('#mydiv').append(str);
+
+    str = "皇家隊王建民連兩天登板投球，今天對印地安人隊之戰，建仔8局登板";
+
+    var mydiv = $('#mydiv');
+
+    mydiv.append(str.charAt(0) + '<br>');  //取得某個位置的字
+    mydiv.append(str.charAt(1) + '<br>');
+    mydiv.append(str.charCodeAt(2) + '<br>');  //取得某個位置字元的字碼
+    mydiv.append(str.length + '<br>'); //取得字元長度
+    mydiv.append(str.charAt(5) + '<br>') ;
+
+    mydiv.append(str.indexOf('建') + '<br>'); //從前面開始找"建"所在的位置
+    mydiv.append(str.lastIndexOf('建') + '<br>'); //從後面開始找"建"所在的位置
+    mydiv.append(str.slice('0' , '5') + '<br>'); //回傳索引值0-5ㄉ文字
+
+
+</script>
+
+
+</body>
+</html>

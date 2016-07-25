@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+
+
+    <input type="text" id="input1">
+    <button onclick="myclick()">=</button>
+    <div id="mydiv"></div>
+
+
+
+
+<script src="lib/jquery-3.1.0.js"></script>
+<script>
+
+
+    function myclick(){
+        var input1 = parseInt( $('#input1').val() );
+        input1 = parseInt(input1/10);
+
+        var g;
+
+        switch(input1){
+            default:
+                g = 'F';
+                break;
+            case 10:
+            case 9:
+                g = 'A';
+                break;
+            case 8:
+                g = 'B';
+                break;
+            case 7:
+                g = 'C';
+                break;
+            case 6:
+                g = 'D';
+                break;
+
+        }
+
+
+        $('#mydiv').text( g );
+
+        //alert('123');
+    }
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

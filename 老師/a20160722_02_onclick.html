@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+
+
+    <input type="text" id="input1"> +
+    <input type="text" id="input2">
+    <button onclick="myclick()">=</button>
+    <div id="mydiv"></div>
+
+
+
+
+<script src="lib/jquery-3.1.0.js"></script>
+<script>
+
+
+    function myclick(){
+        var input1 = parseInt( $('#input1').val() );
+        var input2 = parseInt( $('#input2').val() );
+
+        $('#mydiv').text( input1 + input2);
+
+        //alert('123');
+    }
+
+
+
+
+
+/*
+
+    var str = "皇家隊王建民連兩天登板投球，今天對印地安人隊之戰，王建民8局登板";
+
+    var mydiv =  $('#mydiv');
+
+    mydiv.append(str.split('王建民') + '<br>');
+    mydiv.append(str.split('王建民').join('胡立歐') + '<br>');
+    mydiv.append(str.split('王建民').join('') + '<br>');
+    mydiv.append(str.split('王建民').join('<span style="color:red">王建民</span>') + '<br>');
+*/
+
+
+</script>
+
+
+</body>
+</html>
